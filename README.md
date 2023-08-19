@@ -13,3 +13,9 @@ https://full-access:glpat-Qv5FvMoMxjfvWxjnXpgs@gitlab.com/jon-spring-labs/knackl
 - Spring Boot v2.7.8
 - Using Spring Boot WebFlux
 ```
+
+## Docker
+
+```
+ docker run -it -p 8080:8080 --rm --name test-app my-app:latest 
+ docker run -it -p 8080:8080 --rm --name test-app my-app:latest --spring.profiles.active=dev
