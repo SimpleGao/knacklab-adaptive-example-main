@@ -17,5 +17,5 @@ https://full-access:glpat-Qv5FvMoMxjfvWxjnXpgs@gitlab.com/jon-spring-labs/knackl
 ## Docker
 
 ```
- docker run -it -p 8080:8080 --rm --name test-app my-app:latest 
+ docker build --build-arg JAR_FILE=/target/*.jar -t my-app:latest .
  docker run -it -p 8080:8080 --rm --name test-app my-app:latest --spring.profiles.active=dev
