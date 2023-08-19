@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "knack",
+      "type": "io.knacklab.adaptive.store.config.StoreConfig",
+      "sourceType": "io.knacklab.adaptive.store.config.StoreConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "knack.stores",
+      "type": "java.util.List<io.knacklab.adaptive.store.core.StoreSpace>",
+      "sourceType": "io.knacklab.adaptive.store.config.StoreConfig"
+    }
+  ],
+  "hints": []
+}

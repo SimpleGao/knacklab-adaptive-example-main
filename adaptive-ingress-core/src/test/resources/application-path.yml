@@ -1,0 +1,14 @@
+ingress:
+  actions:
+    - method: delete
+      pattern: /delete
+      name: dummy
+    - method: get
+      pattern: /get
+      name: dummy
+    - method: post
+      pattern: /post
+      name: dummy
+    - method: put
+      pattern: /put
+      name: dummy

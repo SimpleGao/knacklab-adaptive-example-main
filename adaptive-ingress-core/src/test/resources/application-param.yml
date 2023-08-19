@@ -1,0 +1,11 @@
+ingress:
+  actions:
+    - method: get
+      pattern: /no-query-param
+      name: dummy
+    - method: get
+      pattern: /one-query-param
+      name: dummy
+    - method: get
+      pattern: /two-query-params
+      name: dummy

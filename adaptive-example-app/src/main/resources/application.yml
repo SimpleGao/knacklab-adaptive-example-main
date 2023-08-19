@@ -1,0 +1,46 @@
+logging:
+  level:
+    io.knacklab.adaptive.ingress: TRACE
+    io.knacklab.adaptive.egress: TRACE
+
+spring:
+  webflux:
+    base-path: /api
+  redis:
+    host: localhost
+    port: 6379
+
+ingress:
+  actions:
+    - method: get
+      pattern: /predict-gender-age
+      name: ingress.predict
+    - method: post
+      pattern: /kiosk/{kiosk-id}/start
+      name: start.journey
+
+
+egress:
+  exchanges:
+    - method: get
+      pattern: /?name=nihao
+      base-url: https://api.agify.io
+      name: agify.predict-age
+    - method: get
+      pattern: /?name=nihoa
+      base-url: https://api.genderize.io
+      name: genderize.predict-gender
+  ex:
+    - method: get
+      pattern: /
+      base-url: https://api.agify.io
+      name: agify.predict-age
+    - method: get
+      pattern: /
+      base-url: https://api.genderize.io
+      name: genderize.predict-gender
+knack:
+  stores:
+    - prefix: mfm-backend
+      name: store.backend-api
+      mock: false

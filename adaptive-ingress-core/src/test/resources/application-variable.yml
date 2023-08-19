@@ -1,0 +1,11 @@
+ingress:
+  actions:
+    - method: get
+      pattern: /no-path-variable
+      name: dummy
+    - method: get
+      pattern: /one-path-variable/{one}
+      name: dummy
+    - method: get
+      pattern: /two-path-variables/{one}/with-kids/{two}
+      name: dummy

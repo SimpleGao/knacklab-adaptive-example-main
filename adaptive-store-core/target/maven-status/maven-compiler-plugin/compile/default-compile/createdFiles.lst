@@ -1,0 +1,12 @@
+io\knacklab\adaptive\store\core\StoreBase.class
+io\knacklab\adaptive\store\core\StoreRegistryFactory.class
+io\knacklab\adaptive\store\App.class
+io\knacklab\adaptive\store\core\StoreRegistry.class
+io\knacklab\adaptive\store\core\Store.class
+io\knacklab\adaptive\store\expection\NotFoundException.class
+io\knacklab\adaptive\store\config\EnableAdaptiveStore.class
+META-INF\spring-configuration-metadata.json
+io\knacklab\adaptive\store\expection\StoreException.class
+io\knacklab\adaptive\store\config\StoreConfig.class
+io\knacklab\adaptive\store\core\StoreManager.class
+io\knacklab\adaptive\store\core\StoreSpace.class

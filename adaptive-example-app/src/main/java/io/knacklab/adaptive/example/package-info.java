@@ -1,0 +1,1 @@
+package io.knacklab.adaptive.example;

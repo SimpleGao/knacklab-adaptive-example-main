@@ -1,0 +1,9 @@
+spring:
+  webflux:
+    base-path: /api
+
+ingress:
+  actions:
+    - method: get
+      pattern: /messaging
+      name: dummy

@@ -1,0 +1,25 @@
+logging:
+  level:
+    io.knacklab.adaptive.ingress: TRACE
+    io.knacklab.adaptive.egress: TRACE
+
+spring:
+  webflux:
+    base-path: /api
+
+ingress:
+  actions:
+    - method: get
+      pattern: /predict-gender-age
+      name: ingress.predict
+
+egress:
+  exchanges:
+    - method: get
+      pattern: /?name=hh
+      base-url: https://api.agify.io
+      name: agify.predict-age
+    - method: get
+      pattern: /?name=hh
+      base-url: https://api.genderize.io
+      name: genderize.predict-gender
