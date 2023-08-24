@@ -4,19 +4,15 @@ import com.fasterxml.jackson.databind.JsonNode;
 import io.knacklab.adaptive.egress.core.ExchangeBase;
 import io.knacklab.adaptive.egress.core.ExchangeManager;
 import io.knacklab.adaptive.example.messaging.ExchangeContext;
-import io.knacklab.adaptive.example.messaging.egress.AgeOutput;
-import io.knacklab.adaptive.example.messaging.egress.GenderOutput;
 import io.knacklab.adaptive.example.messaging.ingress.PredictResponse;
 import io.knacklab.adaptive.ingress.action.MessagingBase;
 import io.knacklab.adaptive.ingress.config.ActionConfig;
-import io.knacklab.adaptive.ingress.core.ActionBase;
 import io.knacklab.adaptive.ingress.exception.ActionException;
 import io.knacklab.adaptive.ingress.exception.IngressException;
 import io.knacklab.adaptive.ingress.messaging.IngressContext;
 import lombok.val;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import org.springframework.web.reactive.function.server.ServerRequest;
 import reactor.core.publisher.Mono;
 
 @Service("ingress.predict")
