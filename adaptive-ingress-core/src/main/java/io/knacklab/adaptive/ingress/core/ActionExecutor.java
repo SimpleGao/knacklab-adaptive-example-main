@@ -62,16 +62,16 @@ public class ActionExecutor implements Action {
 
     private void ensureDependencies() {
         if (Objects.isNull(executorAware)) {
-            throw new ActionException(HttpStatus.INTERNAL_SERVER_ERROR, "");
+            throw new ActionException(HttpStatus.INTERNAL_SERVER_ERROR, "ExecutorAware is null");
         }
         if (Objects.isNull(bodyExtractor)) {
-            throw new ActionException(HttpStatus.INTERNAL_SERVER_ERROR, "");
+            throw new ActionException(HttpStatus.INTERNAL_SERVER_ERROR, "BodyExtractor is null");
         }
         if (Objects.isNull(bodyInserter)) {
-            throw new ActionException(HttpStatus.INTERNAL_SERVER_ERROR, "");
+            throw new ActionException(HttpStatus.INTERNAL_SERVER_ERROR, "BodyInserter is null");
         }
         if (Objects.isNull(transformer)) {
-            throw new ActionException(HttpStatus.INTERNAL_SERVER_ERROR, "");
+            throw new ActionException(HttpStatus.INTERNAL_SERVER_ERROR, "Transformer is null");
         }
 
     }
